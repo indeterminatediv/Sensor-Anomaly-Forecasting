@@ -1,0 +1,13 @@
+pymongo[srv]==4.2.0
+scikit-learn
+PyYAML
+scipy
+dill
+imblearn
+-e .   
+
+# """
+# Its equivalent to find packages.  This updates the sensor folder. 
+# This is editable installation, without this, current code updates properly.
+# -e . searches for setup.py and use findpackages i.e executes setup.py.
+# """

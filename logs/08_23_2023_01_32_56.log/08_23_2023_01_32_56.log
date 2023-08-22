@@ -1,0 +1,24 @@
+[ 2023-08-23 01:33:06,301 ] 25 root - INFO - Data Ingestion started
+[ 2023-08-23 01:33:06,454 ] 26 root - INFO - exporting data from mongodb to feature store
+[ 2023-08-23 01:33:10,389 ] 36 root - INFO - Exportig Done
+[ 2023-08-23 01:33:10,468 ] 50 root - INFO - Performed train test split on the dataframe
+[ 2023-08-23 01:33:10,469 ] 52 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2023-08-23 01:33:10,471 ] 59 root - INFO - Exporting train test split file path.
+[ 2023-08-23 01:33:11,840 ] 68 root - INFO - Exported data as train test
+[ 2023-08-23 01:33:11,850 ] 28 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='artifact\\08_23_2023_01_32_57\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\08_23_2023_01_32_57\\data_ingestion\\ingested\\test.csv')
+[ 2023-08-23 01:33:12,356 ] 47 root - INFO - Missing numerical columns:[[]]
+[ 2023-08-23 01:33:12,357 ] 47 root - INFO - Missing numerical columns:[[]]
+[ 2023-08-23 01:33:13,332 ] 136 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=False, valid_train_file_path='artifact\\08_23_2023_01_32_57\\data_ingestion\\ingested\\train.csv', valid_test_file_path='artifact\\08_23_2023_01_32_57\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='artifact\\08_23_2023_01_32_57\\data_validation\\drift_report\\report.yaml')
+[ 2023-08-23 01:33:15,539 ] 57 root - INFO - Entered the save_object method of MainUtils class
+[ 2023-08-23 01:33:15,556 ] 61 root - INFO - Exited the save_object method of MainUtils class
+[ 2023-08-23 01:33:15,556 ] 86 root - INFO - Data transformation artifact:DataTransformationArtifact(transformed_object_file_path='artifact\\08_23_2023_01_32_57\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='artifact\\08_23_2023_01_32_57\\data_transformation\\transformed\\train.npy', transformed_test_file_path='artifact\\08_23_2023_01_32_57\\data_transformation\\data_transformation\\test.npy')
+[ 2023-08-23 01:33:15,564 ] 90 root - INFO - transformation done
+[ 2023-08-23 01:33:25,281 ] 57 root - INFO - Entered the save_object method of MainUtils class
+[ 2023-08-23 01:33:25,307 ] 61 root - INFO - Exited the save_object method of MainUtils class
+[ 2023-08-23 01:33:25,308 ] 78 root - INFO - Model Trainer Artifacts:{model_trainer_artifact}
+[ 2023-08-23 01:33:25,310 ] 92 root - INFO - trainer done
+[ 2023-08-23 01:33:25,976 ] 90 root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=False, improved_accuracy=-0.0049614687912559186, best_model_path='saved_models\\1692734159\\model.pkl', trained_model_path='artifact\\08_23_2023_01_32_57\\model_trainer\\trained_model\\model.pkl', trained_model_metric_artifact=ClassificationMetricArtifact(f1_score=0.9656565656565657, precision_score=0.9579158316633266, recall_score=0.9735234215885947), best_model_metric_artifact=ClassificationMetricArtifact(f1_score=0.9706180344478216, precision_score=0.9657258064516129, recall_score=0.9755600814663951))
+[ 2023-08-23 01:33:25,981 ] 94 root - INFO - evaluation done
+[ 2023-08-23 01:33:25,981 ] 97 root - INFO - pusher started
+[ 2023-08-23 01:33:25,982 ] 97 root - INFO - model file path:artifact\08_23_2023_01_32_57\model_pusher\model.pkl
+[ 2023-08-23 01:33:25,993 ] 99 root - INFO - Pipelind stopped after completion successfully!
